@@ -79,6 +79,8 @@ set smartcase
 set undofile
 set undodir=~/.config/nvim/undo//
 
+set backup
+set writebackup
 set backupdir=~/.config/nvim/backup//
 
 set directory=~/.config/nvim/swap//
