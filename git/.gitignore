@@ -1,0 +1,100 @@
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# Vagrant
+.vagrant/
+
+# Java
+*.class
+.mtj.tmp/
+*.jar
+*.war
+*.ear
+hs_err_pid*
+
+# Composer
+vendor/
+
+# NodeJS
+logs
+*.log
+npm-debug.log*
+pids
+*.pid
+*.seed
+.node_repl_history
+
+# NPM
+node_modules/
+.npm
+
+# Laravel 5
+bootstrap/cache/
+storage/
+.env.*.php
+.env.php
+.env
+
+# Go
+*.o
+*.a
+*.so
+*.[568vq]
+[568vq].out
+*.cgo1.go
+*.cgo2.c
+_cgo_defun.c
+_cgo_gotypes.go
+_cgo_export.*
+_testmain.go
+*.exe
+*.test
+*.prof
+
+# Vim
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+Session.vim
+.netrwhist
+*~
+tags
+
+# LaTeX
+*.acn
+*.acr
+*.alg
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.dvi
+*.fdb_latexmk
+*.fls
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lof
+*.log
+*.lot
+*.maf
+*.mtc
+*.mtc0
+*.nav
+*.nlo
+*.out
+*.pdfsync
+*.ps
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.xdy
+*.tdo
