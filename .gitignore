@@ -1,0 +1,10 @@
+# Neovim
+!neovim/.config/nvim/backup/.gitkeep
+neovim/.config/nvim/backup
+!neovim/.config/nvim/swap/.gitkeep
+neovim/.config/nvim/swap
+!neovim/.config/nvim/undo/.gitkeep
+neovim/.config/nvim/undo
+neovim/.config/nvim/autoload
+neovim/.config/nvim/.init.vim-rplugin~
+neovim/.config/nvim/.netrwhist
