@@ -91,6 +91,9 @@ set ruler
 set wildmenu
 set number
 
+set list
+set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,space:·
+
 set statusline=
 set statusline+=%*\ \ \ %f
 set statusline+=%=
