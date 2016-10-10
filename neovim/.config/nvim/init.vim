@@ -9,6 +9,7 @@ call plug#begin('~/.vim/plugged')
 
 	" Syntax
 	Plug 'sheerun/vim-polyglot'
+	Plug 'posva/vim-vue'
 
 	" Completion
 	Plug 'honza/vim-snippets'
