@@ -19,7 +19,6 @@ call plug#begin('~/.vim/plugged')
 	" Tools
 	Plug 'mattn/emmet-vim'
 	Plug 'sirver/ultisnips'
-	Plug 'ctrlpvim/ctrlp.vim'
 	Plug 'scrooloose/syntastic'
 	Plug 'editorconfig/editorconfig-vim'
 	Plug 'Shougo/vimproc.vim', {'do' : 'make'}
@@ -44,6 +43,8 @@ filetype plugin on
 
 set encoding=utf-8
 set nrformats-=octal
+
+set path+=**
 
 set viminfo^=!
 set sessionoptions-=options
@@ -131,8 +132,6 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
-
-let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
