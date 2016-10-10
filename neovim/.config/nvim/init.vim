@@ -116,6 +116,7 @@ nnoremap <PageDown> :bprev<CR>
 
 " Functions
 com! FormatJSON %!python -m json.tool
+com! MakeTags !ctags .
 cmap w!! %!sudo tee > /dev/null %
 
 " Plugins
