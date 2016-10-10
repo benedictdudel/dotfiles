@@ -42,7 +42,6 @@ syntax on
 filetype plugin on
 
 set encoding=utf-8
-set nrformats-=octal
 
 set path+=**
 
