@@ -1,8 +1,4 @@
 " Vim Plug
-function! DoRemote(arg)
-  UpdateRemotePlugins
-endfunction
-
 call plug#begin('~/.vim/plugged')
 	" Color
 	Plug 'morhetz/gruvbox'
@@ -14,14 +10,12 @@ call plug#begin('~/.vim/plugged')
 	" Completion
 	Plug 'honza/vim-snippets'
 	Plug 'raimondi/delimitmate'
-	Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 
 	" Tools
 	Plug 'mattn/emmet-vim'
 	Plug 'sirver/ultisnips'
 	Plug 'scrooloose/syntastic'
 	Plug 'editorconfig/editorconfig-vim'
-	Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 
 	" Command
 	Plug 'tpope/vim-abolish'
@@ -34,7 +28,6 @@ call plug#begin('~/.vim/plugged')
 
 	" Language
 	Plug 'fatih/vim-go'
-	Plug 'm2mdas/phpcomplete-extended'
 call plug#end()
 
 " Settings
@@ -126,9 +119,6 @@ hi GitGutterAdd          ctermbg=235
 hi GitGutterChange       ctermbg=235
 hi GitGutterDelete       ctermbg=235
 hi GitGutterChangeDelete ctermbg=235
-
-let g:deoplete#enable_at_startup = 1
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
