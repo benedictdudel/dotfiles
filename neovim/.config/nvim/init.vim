@@ -8,6 +8,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'posva/vim-vue'
 
 	" Completion
+	Plug 'ajh17/VimCompletesMe'
 	Plug 'raimondi/delimitmate'
 
 	" Tools
