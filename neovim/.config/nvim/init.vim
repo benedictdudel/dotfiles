@@ -8,12 +8,10 @@ call plug#begin('~/.vim/plugged')
 	Plug 'posva/vim-vue'
 
 	" Completion
-	Plug 'honza/vim-snippets'
 	Plug 'raimondi/delimitmate'
 
 	" Tools
 	Plug 'mattn/emmet-vim'
-	Plug 'sirver/ultisnips'
 	Plug 'scrooloose/syntastic'
 	Plug 'editorconfig/editorconfig-vim'
 
