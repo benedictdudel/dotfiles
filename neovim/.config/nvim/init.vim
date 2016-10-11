@@ -23,6 +23,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'nelstrom/vim-visual-star-search'
 
 	" Interface
+	Plug 'scrooloose/nerdtree'
 	Plug 'ap/vim-buftabline'
 	Plug 'airblade/vim-gitgutter'
 
@@ -113,6 +114,10 @@ com! MakeTags !ctags .
 cmap w!! %!sudo tee > /dev/null %
 
 " Plugins
+map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+
 let g:gruvbox_sign_column = "bg0_h"
 hi SignColumn            ctermbg=235
 hi GitGutterAdd          ctermbg=235
