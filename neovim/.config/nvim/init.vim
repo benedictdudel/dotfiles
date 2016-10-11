@@ -104,8 +104,12 @@ colorscheme gruvbox
 
 " Mappings
 noremap jj <Esc>:w<CR>
+
 nnoremap <PageUp> :bnext<CR>
 nnoremap <PageDown> :bprev<CR>
+
+nnoremap <silent><esc> :noh<CR>
+nnoremap <esc>^[ <esc>^[
 
 " Functions
 com! FormatJSON %!python -m json.tool
