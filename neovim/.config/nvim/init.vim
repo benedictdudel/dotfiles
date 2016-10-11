@@ -103,7 +103,6 @@ set background=dark
 colorscheme gruvbox
 
 " Mappings
-nnoremap <F5> :GundoToggle<CR>
 noremap jj <Esc>:w<CR>
 nnoremap <PageUp> :bnext<CR>
 nnoremap <PageDown> :bprev<CR>
