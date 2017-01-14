@@ -1,7 +1,7 @@
 " Vim Plug
 call plug#begin('~/.vim/plugged')
 	" Color
-	Plug 'morhetz/gruvbox'
+	Plug 'reedes/vim-colors-pencil'
 
 	" Syntax
 	Plug 'sheerun/vim-polyglot'
@@ -97,9 +97,12 @@ set statusline+=TOTAL:\ %L\ \ \ "
 
 set display+=lastline
 
+" Omni completion
+set omnifunc=syntaxcomplete#Complete
+
 " Colors
 set background=dark
-colorscheme gruvbox
+colorscheme pencil
 
 " Mappings
 noremap jj <Esc>:w<CR>
@@ -119,13 +122,6 @@ cmap w!! %!sudo tee > /dev/null %
 map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
-
-let g:gruvbox_sign_column = "bg0_h"
-hi SignColumn            ctermbg=235
-hi GitGutterAdd          ctermbg=235
-hi GitGutterChange       ctermbg=235
-hi GitGutterDelete       ctermbg=235
-hi GitGutterChangeDelete ctermbg=235
 
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
