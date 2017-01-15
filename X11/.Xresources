@@ -7,6 +7,8 @@ Xft.dpi:        96
 Xft.rgba:       none
 
 ! urxvt
+URxvt.internalBorder:  10
+
 URxvt.iso14755 : false
 
 URxvt.font:        xft:Hack:pixelsize=14
