@@ -86,7 +86,7 @@ set wildmenu
 set number
 
 set list
-set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,space:·
+set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
 
 set statusline=
 set statusline+=%*\ \ \ %f
