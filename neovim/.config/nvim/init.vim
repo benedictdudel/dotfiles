@@ -99,6 +99,9 @@ set statusline+=TOTAL:\ %L\ \ \ "
 
 set display+=lastline
 
+" Filetype
+autocmd BufNewFile,BufRead *.scss set filetype=scss.css
+autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
 
 " Colors
 set background=dark
