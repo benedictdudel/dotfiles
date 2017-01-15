@@ -6,6 +6,7 @@ call plug#begin('~/.vim/plugged')
 	" Syntax
 	Plug 'sheerun/vim-polyglot'
 	Plug 'posva/vim-vue'
+	Plug 'vim-scripts/smarty.vim'
 
 	" Completion
 	Plug 'raimondi/delimitmate'
