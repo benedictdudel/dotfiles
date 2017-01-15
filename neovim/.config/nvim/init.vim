@@ -8,8 +8,8 @@ call plug#begin('~/.vim/plugged')
 	Plug 'posva/vim-vue'
 
 	" Completion
-	Plug 'ajh17/VimCompletesMe'
 	Plug 'raimondi/delimitmate'
+	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 	" Tools
 	Plug 'mattn/emmet-vim'
@@ -98,8 +98,6 @@ set statusline+=TOTAL:\ %L\ \ \ "
 
 set display+=lastline
 
-" Omni completion
-set omnifunc=syntaxcomplete#Complete
 
 " Colors
 set background=dark
@@ -141,3 +139,5 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+
+let g:deoplete#enable_at_startup = 1
