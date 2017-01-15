@@ -11,7 +11,7 @@ URxvt.internalBorder:  10
 
 URxvt.iso14755 : false
 
-URxvt.font:        xft:Hack:pixelsize=14
+URxvt.font:        xft:Hack:pixelsize=14:antialias=true:hinting=true:autohint:true
 
 URxvt.perl-ext-common: default,matcher,fullscreen,clipboard
 
