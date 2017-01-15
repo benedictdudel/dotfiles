@@ -5,6 +5,8 @@
 	editor = nvim
 	whitespace = fix,-indent-with-non-tab,trailing-space
 	excludesfile = ~/.gitignore
+[commit]
+    template = ~/.gitmessage
 [push]
 	default = current
 [color]
