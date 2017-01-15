@@ -15,6 +15,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'mattn/emmet-vim'
 	Plug 'scrooloose/syntastic'
 	Plug 'editorconfig/editorconfig-vim'
+	Plug 'ctrlpvim/ctrlp.vim'
 
 	" Command
 	Plug 'tpope/vim-abolish'
