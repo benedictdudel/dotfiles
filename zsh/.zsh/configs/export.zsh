@@ -1,5 +1,5 @@
 # Path
-export PATH="$PATH"
+export PATH="$PATH:/usr/local/go/bin:$HOME/workspace/bin"
 
 # Language
 export LANG=en_GB.UTF-8
@@ -19,3 +19,6 @@ export CLICOLOR=true
 
 # Time Reporting
 export REPORTTIME=30
+
+# Go
+export GOPATH=$HOME/workspace
