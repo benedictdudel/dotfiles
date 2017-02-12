@@ -1,5 +1,5 @@
 # Path
-export PATH="$PATH:/usr/local/go/bin:$HOME/workspace/bin"
+export PATH="$PATH:/usr/local/go/bin:$HOME/workspace/bin:$HOME/.config/composer/vendor/bin/"
 
 # Language
 export LANG=en_GB.UTF-8
