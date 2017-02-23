@@ -121,6 +121,8 @@ com! FormatJSON %!python -m json.tool
 com! MakeTags !ctags .
 cmap w!! %!sudo tee > /dev/null %
 
+set grepprg=ag\ --nogroup\ --nocolor
+
 " Plugins
 map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeDirArrowExpandable = '▸'
