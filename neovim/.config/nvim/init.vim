@@ -7,6 +7,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'sheerun/vim-polyglot'
 	Plug 'posva/vim-vue'
 	Plug 'vim-scripts/smarty.vim'
+	Plug 'cakebaker/scss-syntax.vim'
 
 	" Completion
 	Plug 'raimondi/delimitmate'
@@ -102,6 +103,16 @@ set display+=lastline
 " Filetype
 autocmd BufNewFile,BufRead *.scss set filetype=scss.css
 autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
+
+" Omnifunctions
+augroup omnifuncs
+  autocmd!
+  autocmd FileType css,sass,scss setlocal omnifunc=csscomplete#CompleteCSS
+  autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+  autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+  autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+  autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+augroup end
 
 " Colors
 set background=dark
