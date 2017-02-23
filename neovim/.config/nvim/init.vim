@@ -145,3 +145,8 @@ let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 
 let g:deoplete#enable_at_startup = 1
+
+let g:ctrlp_max_files=0
+let g:ctrlp_max_depth=40
+let g:ctrlp_use_caching = 0
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
