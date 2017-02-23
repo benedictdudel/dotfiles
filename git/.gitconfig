@@ -23,6 +23,6 @@
 	ps = push
 	pl = pull
 	rb = rebase
-	s = status
+	s = status --short
 	sb = status -s -b
 	whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
