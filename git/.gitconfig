@@ -4,44 +4,46 @@
 
 [core]
 	editor = nvim
+    # Commands such as commit and tag that lets you edit messages by launching this editor
+    # Source: https://git-scm.com/docs/git-config#git-config-coreeditor
 
-	whitespace = fix,-indent-with-non-tab,trailing-space
+	whitespace = trailing-space
+    # A comma separated list of common whitespace problesm to notice by git diff
+    # Source: https://git-scm.com/docs/git-config#git-config-corewhitespace
 
 	excludesfile = ~/.gitignore
 
 [commit]
     template = ~/.gitmessage
+    # Path of a file to use as a template for new commit messages
+    # Source: https://git-scm.com/docs/git-config#git-config-committemplate
+    # See: https://raw.githubusercontent.com/benedictdudel/dotfiles/master/git/.gitmessage
 
 [push]
 	default = current
+    # Push the current branch to update a branch with the same name on the receiving end
+    # Source: https://git-scm.com/docs/git-config#git-config-pushdefault
 
-[color]
-	ui = auto
 
 [diff]
 	tool = vimdiff
+    # Controls which diff tool is used by git-difftool
+    # Source: https://git-scm.com/docs/git-config#git-config-difftool
 
 [alias]
 	c = commit --verbose
+    # Show diff of files which are gonna be commited in the commit message
+    # Source: https://git-scm.com/docs/git-commit#git-commit---verbose
 
 	l = log --oneline
+    # Show only hash and commit title in git log
+    # Source: https://git-scm.com/docs/git-log#git-log---oneline
 
-	lg = log --oneline --graph --decorate
 
 	ls = ls-files
-
-	o = checkout
-
-	ob = checkout -b
-
-	ps = push
-
-	pl = pull
-
-	rb = rebase
+    # Show information about files in the index and the working tree
+    # Source: https://git-scm.com/docs/git-ls-files
 
 	s = status --short
-
-	sb = status -s -b
-
-	whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
+    # Show a less verbose git status output
+    # Source: https://git-scm.com/docs/git-status#git-status---short
