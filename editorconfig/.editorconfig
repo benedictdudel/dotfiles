@@ -34,5 +34,6 @@ trim_trailing_whitespace = false
 
 [*.json]
 indent_size = 2
+# Ident files of type JSON by 2 spaces
 # See: https://docs.npmjs.com/misc/coding-style#indentation
 # Source: http://editorconfig.org/#file-format-details
