@@ -1,59 +1,27 @@
-# Connecting
-set cmd:default-protocol ftp
-set bmk:save-passwords no
-set fish:connect-program "ssh -a -x"
+set cmd:long-running 1
+# Disable beep for long running command executions
+# Source: https://lftp.yar.ru/lftp-man.html
 
-# Commands
-set cmd:ls-default "ls -lh"
-set ftp:sync-mode yes
-
-# Prompt
-set cmd:prompt "\\[\\e[1;30m\\][\\[\\e[0;34m\\]f\\[\\e[1m\\]t\\[\\e[37m\\]p\\[\\e[30m\\]] \\[\\e[34m\\]\\u\\[\\e[0;34m\\]\\@\\[\\e[1m\\]\\h\\[\\e[1;30m\\]:\\[\\e[1;34m\\]\\w\\[\\e[1;30m\\]>\\[\\e[0m\\]""]]]]]]]]]]]]"
-
-# Get/Put
-set cmd:parallel 1
-set cmd:queue-parallel 1
-
-# Cache
-set cache:cache-empty-listings false
-set cache:enable yes
-set cache:expire 1h
-set cache:expire-negative 1
-set cache:size 512
-
-set dns:cache-enable yes
-set dns:cache-expire 1h
-set dns:cache-size 512
-
-# DNS
-set dns:fatal-timeout never
-set dns:order "inet6 inet"
-set dns:use-fork yes
-set dns:max-retries 1000
-
-# Encoding
-set file:charset utf-8
-set fish:charset utf-8
-set ftp:charset "UTF-8"
-
-# Completion
-set cmd:remote-completion yes
-
-# Shell
-set fish:shell /bin/sh
-
-# List
-set ftp:list-options  "-a"
-set ftp:rest-list yes
-set ftp:rest-stor yes
-
-# SSL
-set ftp:ssl-allow yes
-set ftp:ssl-force yes
-set ftp:ssl-protect-data yes
-set ftp:ssl-protect-fxp yes
-set ftp:ssl-protect-list yes
-set ftp:ssl-use-ccc no
-
-# History
 set cmd:csh-history no
+# Enable csh-like history expansion
+# Source: https://lftp.yar.ru/lftp-man.html
+
+set cmd:default-protocol ftp
+# Set FTP as the default protocol
+# Source: https://lftp.yar.ru/lftp-man.html
+
+set cmd:ls-default "ls -lh"
+# Default ls command is ls -lh
+# Source: https://lftp.yar.ru/lftp-man.html
+
+set cmd:queue-parallel 1
+# Run three jobs in parallel in a queue
+# Source: https://lftp.yar.ru/lftp-man.html
+
+set cache:enable no
+# Disable caching
+# Source: https://lftp.yar.ru/lftp-man.html
+
+set cmd:remote-completion yes
+# Enable remote completion
+# Source: https://lftp.yar.ru/lftp-man.html
