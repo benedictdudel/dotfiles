@@ -1,17 +1,17 @@
 [user]
-	name = Benedict Dudel
-	email = dudel.benedict@gmail.com
+    name = Benedict Dudel
+    email = dudel.benedict@gmail.com
 
 [core]
-	editor = nvim
+    editor = nvim
     # Commands such as commit and tag that lets you edit messages by launching this editor
     # Source: https://git-scm.com/docs/git-config#git-config-coreeditor
 
-	whitespace = trailing-space
+    whitespace = trailing-space
     # A comma separated list of common whitespace problesm to notice by git diff
     # Source: https://git-scm.com/docs/git-config#git-config-corewhitespace
 
-	excludesfile = ~/.gitignore
+    excludesfile = ~/.gitignore
     # Path of a file to use as a global .gitignore instead of $XDG_CONFIG_HOME/git/ignore
     # Source: https://git-scm.com/docs/git-config#git-config-coreexcludesFile
     # See: https://raw.githubusercontent.com/benedictdudel/dotfiles/master/git/.gitignore
@@ -38,7 +38,7 @@
     # See: https://raw.githubusercontent.com/benedictdudel/dotfiles/master/git/.gitmessage
 
 [push]
-	default = current
+    default = current
     # Push the current branch to update a branch with the same name on the receiving end
     # Source: https://git-scm.com/docs/git-config#git-config-pushdefault
 
@@ -55,24 +55,23 @@
     # via https://groups.google.com/forum/#!topic/binary-transparency/f-BI4o8HZW0
 
 [diff]
-	tool = vimdiff
+    tool = vimdiff
     # Controls which diff tool is used by git-difftool
     # Source: https://git-scm.com/docs/git-config#git-config-difftool
 
 [alias]
-	c = commit --verbose
+    c = commit --verbose
     # Show diff of files which are gonna be commited in the commit message
     # Source: https://git-scm.com/docs/git-commit#git-commit---verbose
 
-	l = log --oneline
+    l = log --oneline
     # Show only hash and commit title in git log
     # Source: https://git-scm.com/docs/git-log#git-log---oneline
 
-
-	ls = ls-files
+    ls = ls-files
     # Show information about files in the index and the working tree
     # Source: https://git-scm.com/docs/git-ls-files
 
-	s = status --short
+    s = status --short
     # Show a less verbose git status output
     # Source: https://git-scm.com/docs/git-status#git-status---short
