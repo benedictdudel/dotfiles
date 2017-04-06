@@ -1,28 +1,47 @@
 [user]
 	name = Benedict Dudel
 	email = dudel.benedict@gmail.com
+
 [core]
 	editor = nvim
+
 	whitespace = fix,-indent-with-non-tab,trailing-space
+
 	excludesfile = ~/.gitignore
+
 [commit]
     template = ~/.gitmessage
+
 [push]
 	default = current
+
 [color]
 	ui = auto
+
 [diff]
 	tool = vimdiff
+
 [alias]
 	c = commit --verbose
+
 	l = log --oneline
+
 	lg = log --oneline --graph --decorate
+
 	ls = ls-files
+
 	o = checkout
+
 	ob = checkout -b
+
 	ps = push
+
 	pl = pull
+
 	rb = rebase
+
 	s = status --short
+
 	sb = status -s -b
+
 	whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
