@@ -12,8 +12,26 @@
     # Source: https://git-scm.com/docs/git-config#git-config-corewhitespace
 
 	excludesfile = ~/.gitignore
+    # Path of a file to use as a global .gitignore instead of $XDG_CONFIG_HOME/git/ignore
+    # Source: https://git-scm.com/docs/git-config#git-config-coreexcludesFile
+    # See: https://raw.githubusercontent.com/benedictdudel/dotfiles/master/git/.gitignore
+
+[merge]
+    ff = only
+    # Do not create an extra merge comit, instead only allow fast-forward merges.
+    # Note: this global option applies to all merges, including thise dont during a git pull.
+    # Source: https://git-scm.com/docs/git-config#git-config-mergeff
+
+    conflictstyle = diff3
+    # By default diff is two sets of final changes. This introduces the original text before each side's changes.
+    # Source: https://git-scm.com/docs/git-config#git-config-mergeconflictStyle
 
 [commit]
+    # gpgSign = true
+    # "other people can trust that the changes you've made really were made by you"
+    # Tutorial: https://help.github.com/articles/about-gpg/
+    # Source: https://git-scm.com/docs/git-config#git-config-commitgpgSign
+
     template = ~/.gitmessage
     # Path of a file to use as a template for new commit messages
     # Source: https://git-scm.com/docs/git-config#git-config-committemplate
@@ -24,6 +42,17 @@
     # Push the current branch to update a branch with the same name on the receiving end
     # Source: https://git-scm.com/docs/git-config#git-config-pushdefault
 
+[status]
+    showUntrackedFiles = all
+    # Show all newly-added files instead of just the newly-added directory
+    # https://git-scm.com/docs/git-config#git-config-statusshowUntrackedFiles
+
+[transfer]
+    fsckobjects = true
+    # To combat repository corruption!
+    # Note: this global option applies during receive and transmit
+    # https://git-scm.com/docs/git-config#git-config-transferfsckObjects
+    # via https://groups.google.com/forum/#!topic/binary-transparency/f-BI4o8HZW0
 
 [diff]
 	tool = vimdiff
