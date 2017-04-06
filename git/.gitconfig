@@ -75,3 +75,7 @@
     s = status --short
     # Show a less verbose git status output
     # Source: https://git-scm.com/docs/git-status#git-status---short
+
+    stash-all = stash save --include-untracked
+    # Stash all files and include all untracked files as well
+    # Source: https://git-scm.com/docs/git-stash#_options
