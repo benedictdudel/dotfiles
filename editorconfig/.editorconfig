@@ -1,15 +1,38 @@
 root = true
+# Stop searching for other .editorconfig's when reaching this file
+# Source: http://editorconfig.org/#file-format-details
 
 [*]
 indent_style = space
+# Indent every filetype with spaces
+# Source: http://editorconfig.org/#file-format-details
+
 indent_size = 4
+# Number of columns used for each indentation level
+# Source: http://editorconfig.org/#file-format-details
+
 end_of_line = lf
+# Use linefeed as the default line break
+# Source: http://editorconfig.org/#file-format-details
+
 charset = utf-8
+# Default character set for every file is utf-8
+# Source: http://editorconfig.org/#file-format-details
+
 trim_trailing_whitespace = true
+# Always remove trailing whitespaces for every filetype
+# Source: http://editorconfig.org/#file-format-details
 
 [*.md]
 indent_size = 2
+# Indent Markdown files by 2 spaces
+# Source: http://editorconfig.org/#file-format-details
+
 trim_trailing_whitespace = false
+# Unset the trimming of trailing whitespaces
+# Source: http://editorconfig.org/#file-format-details
 
 [*.json]
 indent_size = 2
+# See: https://docs.npmjs.com/misc/coding-style#indentation
+# Source: http://editorconfig.org/#file-format-details
