@@ -2,7 +2,7 @@ export PATH="/usr/local/go/bin:$PATH"
 # Extend path for GO binaries
 # Source: http://askubuntu.com/a/476435
 
-export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+export PATH="$HOME/.composer/vendor/bin:$PATH"
 # Extend path for composer executables
 # Source: http://askubuntu.com/a/476435
 
