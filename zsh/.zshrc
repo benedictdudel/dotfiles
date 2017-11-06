@@ -26,7 +26,7 @@ export PAGER='less'
 # Use less as the default pager
 # Source: http://stackoverflow.com/a/171564
 
-export EDITOR='nvim'
+export EDITOR='vim'
 # Use neovim as the default editor
 # Source: http://unix.stackexchange.com/a/350030
 

@@ -3,7 +3,7 @@
     email = dudel.benedict@gmail.com
 
 [core]
-    editor = nvim
+    editor = vim
     # Commands such as commit and tag that lets you edit messages by launching this editor
     # Source: https://git-scm.com/docs/git-config#git-config-coreeditor
 
