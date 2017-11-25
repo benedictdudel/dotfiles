@@ -18,6 +18,10 @@ export PATH="/opt/apache-maven-3.3.9/bin:$PATH:"
 # Extend path for maven binaries
 # Source: http://askubuntu.com/a/476435
 
+export PATH="$HOME/.node_modules/bin:$PATH:"
+# Extend path for node modules
+# Source: http://askubuntu.com/a/476435
+
 export LANG=en_GB.UTF-8
 # Export LANG environment variable
 # Source: http://stackoverflow.com/a/24995139

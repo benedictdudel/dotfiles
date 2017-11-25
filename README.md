@@ -19,6 +19,7 @@
   - [mycli](https://www.mycli.net/)
   - [Neovim](https://neovim.io/)
   - [newsbeuter](http://newsbeuter.org/)
+  - [npm](https://www.npmjs.com/)
   - [tmux](https://github.com/tmux/tmux/wiki)
   - [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html)
   - [zsh](http://www.zsh.org/)
