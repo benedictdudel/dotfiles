@@ -25,6 +25,7 @@
   - [zsh](http://www.zsh.org/)
     - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
     - [zsh-completions](https://github.com/zsh-users/zsh-completions)
+    - [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
 
 # Usage
 

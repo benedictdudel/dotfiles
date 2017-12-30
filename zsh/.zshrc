@@ -149,5 +149,17 @@ compinit
 # Initialize completion system
 # Source: http://zsh.sourceforge.net/Doc/Release/Completion-System.html#Initialization
 
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+# Load plugin for history search
+# Source: https://github.com/zsh-users/zsh-history-substring-search#usage
+
+bindkey '^[[A' history-substring-search-up
+# Bind up arrow to search backwards in history
+# Source: https://github.com/zsh-users/zsh-history-substring-search#usage
+
+bindkey '^[[B' history-substring-search-down
+# Bind down arrow to search forwards in history
+# Source: https://github.com/zsh-users/zsh-history-substring-search#usage
+
 # Load plugin for fish-like autosuggestions
 # Source: https://github.com/zsh-users/zsh-autosuggestions
