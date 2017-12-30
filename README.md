@@ -24,6 +24,7 @@
   - [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html)
   - [zsh](http://www.zsh.org/)
     - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+    - [zsh-completions](https://github.com/zsh-users/zsh-completions)
 
 # Usage
 

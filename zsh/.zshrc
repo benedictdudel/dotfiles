@@ -141,5 +141,13 @@ alias cp='cp -i'
 # Source: http://man7.org/linux/man-pages/man1/cp.1.html
 
 source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+autoload -Uz compinit
+# Enable completion system
+# Source: http://zsh.sourceforge.net/Doc/Release/Completion-System.html#Initialization
+
+compinit
+# Initialize completion system
+# Source: http://zsh.sourceforge.net/Doc/Release/Completion-System.html#Initialization
+
 # Load plugin for fish-like autosuggestions
 # Source: https://github.com/zsh-users/zsh-autosuggestions
