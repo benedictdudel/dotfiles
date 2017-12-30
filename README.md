@@ -22,6 +22,7 @@
   - [npm](https://www.npmjs.com/)
   - [tmux](https://github.com/tmux/tmux/wiki)
   - [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html)
+    - [urxvt-fullscreen](https://wiki.archlinux.org/index.php/Rxvt-unicode#Fullscreen)
   - [zsh](http://www.zsh.org/)
     - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
     - [zsh-completions](https://github.com/zsh-users/zsh-completions)
